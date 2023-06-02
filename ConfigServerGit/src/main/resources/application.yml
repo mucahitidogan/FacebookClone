@@ -1,0 +1,16 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server-git
+  cloud:
+    config:
+      server:
+        git:
+          uri: "https://github.com/mucahitidogan/java7configyml.git"
+          default-label: main
+          skip-ssl-validation: true
+          username: mucahitidogan
+          password: ${GIT_FACEBOOK_CLONE_PASSWORD}
+#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
